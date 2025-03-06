@@ -1,0 +1,39 @@
+/* Dashboard Container */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 40px 20px;
+}
+
+/* Gradient Text for Welcome Heading */
+.gradient-text {
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Image Styling (Smaller Size) */
+.dashboard-img {
+  max-width: 60%;  /* Reduced size */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dashboard-container .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .dashboard-img {
+    max-width: 80%;  /* Adjust size for mobile */
+  }
+}
